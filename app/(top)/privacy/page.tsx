@@ -1,11 +1,8 @@
-import Page from "@/top/privacy.mdx"
 import { Metadata } from "next"
-import { ReactNode } from "react"
+import { PrivacyPage } from "@/privacy/page"
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
 }
 
-export default function PrivacyPage(): ReactNode {
-  return <Page />
-}
+export default PrivacyPage
