@@ -1,11 +1,8 @@
-import Page from "@/top/term.mdx"
 import { Metadata } from "next"
-import { ReactNode } from "react"
+import { TermPage } from "@/term/page"
 
 export const metadata: Metadata = {
   title: "Terms of Use",
 }
 
-export default function TermsPage(): ReactNode {
-  return <Page />
-}
+export default TermPage
