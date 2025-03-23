@@ -4,7 +4,9 @@ import { ReactNode } from "react"
 export function RootPage(): ReactNode {
   const nav = (
     <nav className="mb-6">
-      <a href="https://ask.box">Go to App →</a>
+      <a href="https://ask.box" target="_blank">
+        Go to App →
+      </a>
     </nav>
   )
 
