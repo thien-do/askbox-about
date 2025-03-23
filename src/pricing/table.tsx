@@ -33,22 +33,24 @@ export function PricingTable(): ReactNode {
       <PricingItem title="Price per extra seat" team="$8.99" />
       <PricingHeading>AI Power</PricingHeading>
       <PricingItem title="Standard models" standard pro team>
-        Fast, efficient AI for everyday tasks like data processing and
-        targeted marketing. Examples: GPT-4o Mini, Gemini Flash, Claude
-        Haiku.
+        Fast, efficient AI for everyday tasks like
+        data processing and targeted marketing.
+        Examples: GPT-4o Mini, Gemini Flash, Claude Haiku.
       </PricingItem>
       <PricingItem title="Flagship models" pro team>
-        State-of-the-art AI for complex tasks such as advanced coding and
-        financial analysis. Examples: GPT-4o, Gemini Pro, Claude Opus.
+        State-of-the-art AI for complex tasks such as
+        advanced coding and financial analysis.
+        Examples: GPT-4o, Gemini Pro, Claude Opus.
       </PricingItem>
       <PricingItem title="Smart Tools" pro team>
-        Access specialized tools beyond text generation, including web
-        search and calculators.
+        Access specialized tools beyond text generation,
+        including web search and calculators.
       </PricingItem>
       <PricingHeading>Enhanced Capabilities</PricingHeading>
       <PricingItem title="Document Analysis" pro team>
-        Read and analyze documents for context-specific and updated
-        information, such as financial reports or research papers.
+        Read and analyze documents
+        for context-specific and updated information,
+        such as financial reports or research papers.
       </PricingItem>
       <PricingItem title="Image Understanding" pro team>
         Process and analyze photos, drawings, and screenshots with ease.
@@ -61,30 +63,33 @@ export function PricingTable(): ReactNode {
         Pin important chats for quick retrieval.
       </PricingItem>
       <PricingItem title="Private Mode" pro team>
-        Conduct conversations without storing any history. Coming in 2024.
+        Conduct conversations without storing any history.
+        Coming in 2025.
       </PricingItem>
       <PricingItem title="Sharing" pro team>
-        Easily share your chats with others. Coming in 2024.
+        Easily share your chats with others.
+        Coming in 2025.
       </PricingItem>
       <PricingHeading>Team Suite</PricingHeading>
       <PricingItem title="Cross-Device Sync" team>
-        Access your chat history seamlessly across all devices. Coming in
-        2024.
+        Access your chat history seamlessly across all devices.
+        Coming in 2025.
       </PricingItem>
       <PricingItem title="Enhanced Security" team>
         Benefit from robust data encryption for all synced information.
-        Coming in 2024.
+        Coming in 2025.
       </PricingItem>
       <PricingItem title="Single Sign-On" team>
-        Streamline access using your company's existing credentials. Coming
-        in 2024.
+        Streamline access using your company's existing credentials.
+        Coming in 2025.
       </PricingItem>
       <PricingItem title="Team Management" team>
         Control service access for your entire organization.
       </PricingItem>
       <PricingItem title="Custom Training Data" team>
-        Train bots with industry-specific data for tasks like legal
-        contracts, medical reports, and financial analysis. Coming in 2024.
+        Train bots with industry-specific data for tasks like
+        legal contracts, medical reports, and financial analysis.
+        Coming in 2025.
       </PricingItem>
     </tbody>
   )
