@@ -2,7 +2,7 @@ import { RootLayout } from "@/root/layout";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About AskBox",
+  title: "AskBox",
 };
 
 export default RootLayout

@@ -6,9 +6,9 @@ export function TopLayout(props: {
   const { children } = props
 
   const nav = (
-    <div className="mb-6 flex gap-3">
+    <nav className="mb-6">
       <a href="/">← Back to Top</a>
-    </div>
+    </nav>
   )
 
   return (
