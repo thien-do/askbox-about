@@ -1,8 +1,8 @@
-import Page from "@/top/privacy.mdx"
+import Page from "@/top/term.mdx"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Privacy Policy",
+  title: "Terms of Use",
 }
 
 export default Page
