@@ -1,11 +1,8 @@
-import Page from "@/brand/page.mdx"
 import { Metadata } from "next"
-import { ReactNode } from "react"
+import { BrandPage } from "@/brand/page"
 
 export const metadata: Metadata = {
   title: "Brand",
 }
 
-export default function BrandPage(): ReactNode {
-  return <Page />
-}
+export default BrandPage

@@ -1,11 +1,8 @@
-import Page from "@/top/refund.mdx"
 import { Metadata } from "next"
-import { ReactNode } from "react"
+import { RefundPage } from "@/refund/page"
 
 export const metadata: Metadata = {
   title: "Refund Policy",
 }
 
-export default function RefundPage(): ReactNode {
-  return <Page />
-}
+export default RefundPage
