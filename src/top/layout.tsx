@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { ReactNode } from "react"
 
 export function TopLayout(props: {
@@ -7,7 +8,7 @@ export function TopLayout(props: {
 
   const nav = (
     <nav className="mb-6">
-      <a href="/">← Back to Top</a>
+      <Link href="/">← Back to Top</Link>
     </nav>
   )
 

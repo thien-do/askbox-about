@@ -80,7 +80,7 @@ export function PricingTable(): ReactNode {
         Coming in 2025.
       </PricingItem>
       <PricingItem title="Single Sign-On" team>
-        Streamline access using your company's existing credentials.
+        Streamline access using your company&lsquo;s existing credentials.
         Coming in 2025.
       </PricingItem>
       <PricingItem title="Team Management" team>
