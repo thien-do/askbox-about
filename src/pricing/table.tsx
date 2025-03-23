@@ -52,7 +52,6 @@ export function PricingTable(): ReactNode {
       </PricingItem>
       <PricingItem title="Image Understanding" pro team>
         Process and analyze photos, drawings, and screenshots with ease.
-        Coming in 2024.
       </PricingItem>
       <PricingHeading>Conversation Management</PricingHeading>
       <PricingItem title="Chat History" standard pro team>
@@ -81,7 +80,7 @@ export function PricingTable(): ReactNode {
         in 2024.
       </PricingItem>
       <PricingItem title="Team Management" team>
-        Control service access for your entire organization. Coming in 2024.
+        Control service access for your entire organization.
       </PricingItem>
       <PricingItem title="Custom Training Data" team>
         Train bots with industry-specific data for tasks like legal
