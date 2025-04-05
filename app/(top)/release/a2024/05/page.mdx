@@ -5,43 +5,6 @@ import { ReleaseBuild } from "@/release/build";
 
 ## May 12
 
-<ReleaseVideo src="https://res.cloudinary.com/dltbv060k/video/upload/v1742050528/1_lxok8q.mov" />
-
-**Ask Box just got enhanced animation 🎮**
-We've overhauled the motion design for both side boxes,
-making them not only appear more natural but also significantly smoother.
-Try it now on 👉 **[ask.box](https://ask.box)** 👈
-
-🎁 **Bonus for Devs:** Behind the scene,
-we completely eliminated all layout calculations during the animation.
-This means the animation can be off-loaded completely to GPU,
-making it not only smoother, but also saving CPU resources for other things.
-
-<ReleaseBuild>
-**Let's start with production, that is, `ask.box` at the moment.**
-This is how it looks when you open or close the side panel.
-You may feel that it's smooth enough, but we can do much better.
-Notice that the "layout" calculation is as much as "style" calculation.
-That's not great, because "layout" is much more expensive.
-
-<ReleaseVideo src="https://res.cloudinary.com/dltbv060k/video/upload/v1743843050/1_oq4mlr.mov" />
-
-The reason why we need to trigger "layout" is because we are animating "width" (not great).
-We need to animate "width" because it's not possible to resize with "scale" (great!)
-while keeping the border and border radius intact.
-Notice the card: it is expanding while side collapsing,
-but its border and border radius stay the same.
-We thought this performance is the best compromise to have the beautiful animation.
-
-**But we was wrong. We can do better**
-
-This is the same animation that we are working on.
-This is the ultimate animation: there's absolutely zero "layout" calculation!
-The "style" calculation is as much as the current version, but no "layout":
-
-<ReleaseVideo src="https://res.cloudinary.com/dltbv060k/video/upload/v1743843050/1_oq4mlr.mov" />
-</ReleaseBuild>
-
 ## May 14
 
 OpenAI's latest model GPT-4o is now available on ask.box.

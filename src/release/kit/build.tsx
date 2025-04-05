@@ -79,7 +79,7 @@ function Dialog(props: {
         if (event.target === dialog) dialog.close();
       }}
       className={[
-        "m-auto shadow-xl",
+        "mx-auto mt-auto shadow-xl",
         "w-full h-10/12",
         "backdrop:bg-stone-500/50",
         // Reset default styles
