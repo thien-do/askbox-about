@@ -115,13 +115,11 @@ export function ReleaseBuild(props: {
 
   return (
     <>
-      <div className="flex justify-center">
-        <Button
-          text="View build note"
-          icon="⊕"
-          onClick={show}
-        />
-      </div>
+      <Button
+        text="View build note"
+        icon="⊕"
+        onClick={show}
+      />
       <Dialog dialogRef={ref}>
         {children}
       </Dialog>
