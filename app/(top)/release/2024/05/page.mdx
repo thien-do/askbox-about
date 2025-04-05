@@ -1,0 +1,112 @@
+import { ReleaseVideo } from "@/release/video";
+import { ReleaseBuild } from "@/release/build";
+
+# May 2024
+
+## May 12
+
+<ReleaseVideo src="https://res.cloudinary.com/dltbv060k/video/upload/v1742050528/1_lxok8q.mov" />
+
+**Ask Box just got enhanced animation 🎮**
+We've overhauled the motion design for both side boxes,
+making them not only appear more natural but also significantly smoother.
+Try it now on 👉 **[ask.box](https://ask.box)** 👈
+
+🎁 **Bonus for Devs:** Behind the scene,
+we completely eliminated all layout calculations during the animation.
+This means the animation can be off-loaded completely to GPU,
+making it not only smoother, but also saving CPU resources for other things.
+To learn more, see the build note below.
+
+<ReleaseBuild>
+**Let's start with production, that is, `ask.box` at the moment.**
+This is how it looks when you open or close the side panel.
+You may feel that it's smooth enough, but we can do much better.
+Notice that the "layout" calculation is as much as "style" calculation.
+That's not great, because "layout" is much more expensive.
+
+<ReleaseVideo src="https://res.cloudinary.com/dltbv060k/video/upload/v1743843050/1_oq4mlr.mov" />
+
+The reason why we need to trigger "layout" is because we are animating "width" (not great).
+We need to animate "width" because it's not possible to resize with "scale" (great!)
+while keeping the border and border radius intact.
+Notice the card: it is expanding while side collapsing,
+but its border and border radius stay the same.
+We thought this performance is the best compromise to have the beautiful animation.
+
+**But we was wrong. We can do better**
+
+This is the same animation that we are working on.
+This is the ultimate animation: there's absolutely zero "layout" calculation!
+The "style" calculation is as much as the current version, but no "layout":
+
+<ReleaseVideo src="https://res.cloudinary.com/dltbv060k/video/upload/v1743843050/1_oq4mlr.mov" />
+</ReleaseBuild>
+
+## May 14
+
+OpenAI's latest model GPT-4o is now available on ask.box
+Reasons to switch to to GPT-4o from GPT4-Turbo:
+- Most advanced model
+- 2x faster with half the price (extend ask.box runway!!!)
+- Best for chatting in Vietnamese
+
+## May 19
+
+Ask Box just got better 🚀
+
+**We widened the chat area,** so you can scroll anywhere on the screen.
+The scrollbar now stays at the edge, so it should never collide with your text.
+Even better, we did this without impacting the recent
+[smooth animation](https://ask-box.slack.com/archives/C073EBDTS2V/p1715505949111279)
+🌸
+
+* 👉 **Try it now on [ask.box](https://ask.box)**
+  and tell us what we should do next
+
+* 💡 **To learn more,** see our
+  [build note](https://ask-box.slack.com/archives/C072M4T86HM/p1715744127456839) at #build, or [inspect element](https://developer.mozilla.org/en-US/docs/Glossary/Developer_Tools) yourself
+
+## May 28
+
+〰️〰️〰️ Ask Box just got better 🚀 〰️〰️〰️
+
+**We added a small little button to copy code block 📋**
+* 👉 Try it now on **[ask.box](https://ask.box)** and tell us what we should do next
+* 🙇 This is requested by @hai, so thank you!
+
+## May 29
+
+〰️〰️〰️ Ask Box just got better 🚀 〰️〰️〰️
+
+**We now support down to 768 pixels of a screen 🤏**
+This means you can use Ask Box on smol laptops, tablets, and even phones in landscape position, with _complete_ functionality.
+
+* 👉 **Try it now on [ask.box](https://ask.box),** and tell us what we should do next
+* 💡 **To learn more,** see the [build note](https://ask-box.slack.com/archives/C072M4T86HM/p1716960951085809) at #build 
+
+## May 30
+
+〰️〰️〰️ Ask Box just got better 🚀 〰️〰️〰️
+
+**You can now `Cmd K` (or `Ctrl K`) from anywhere to start a new chat 🧼**
+You no longer need to focus on the ask box first.
+Even better, the ask box will be focused automatically for you to start a new chat right away.
+
+We also support **`Cmd B`** and **`Cmd Shift B`** to toggle the home and settings panels, respectively.
+For our friends on Windows and Linux, they will be `Ctrl B` and `Ctrl Shift B`.
+
+* 👉 **Try it now on [ask.box](https://ask.box),** and tell us what we should do next.
+* 🙇 This is requested by @hai, @Nhi Ly, and @chinh, so thank you!
+
+## May 31
+
+〰️〰️〰️ Ask Box just got better 🚀 〰️〰️〰️
+
+**We use an emoji as our favicon 📮**
+This is a short term solution while we are working with a real designer instead of me.
+There's no meaning here, don't read too much into it.
+It's just an emoji that will stand out in your hundred of tabs.
+
+* 👉 **Try it now on [ask.box](https://ask.box),** and tell us what we should do next.
+* 🙇 Thanks @Nhi Ly for requesting this (who actually did not say "favicon" but "something on the sidebar", hopefully it's favicon) 
