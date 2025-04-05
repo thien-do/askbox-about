@@ -1,7 +1,7 @@
 import { ReactElement } from "react"
 
 const URLS = {
-  chinh: "https://www.linkedin.com/in/chinhq",
+  chinh: "https://www.linkedin.com/in/chinhnq",
   hai: "https://github.com/ng-hai",
 }
 
