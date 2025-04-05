@@ -18,3 +18,13 @@ export default async function Page(props: {
     />
   )
 }
+
+/**
+ * @TODO scan src/release/note to generate
+ */
+export function generateStaticParams(): Params[] {
+  return [
+    { year: "2024", month: "05" },
+    { year: "2024", month: "06" },
+  ]
+}
