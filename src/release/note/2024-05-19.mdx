@@ -1,0 +1,38 @@
+import { ReleaseBuild } from "../kit/build";
+import { ReleaseVideo } from "../kit/video";
+
+![](https://res.cloudinary.com/dltbv060k/image/upload/v1742050520/1_sy2x5v.png)
+
+**We widened the chat area,** so you can scroll anywhere on the screen.
+The scrollbar now stays at the edge, so it should never collide with your text.
+Even better, we did this without impacting the recent [smooth animation](#12) 🌸
+
+<ReleaseBuild>
+
+In [farewell] of DevTool's Layers panel,
+here's the secret sauce of Ask Box's silky smooth
+(i.e., [zero-layout](#12)) animation 🎉
+
+[farewell]: https://issues.chromium.org/issues/328948996
+
+<ReleaseVideo src="https://res.cloudinary.com/dltbv060k/video/upload/v1743867359/1_yazeu0.mov" />
+
+**This technique leads to today's challenge of the "ugly scroll",**
+which is deemed as a bug by almost 25% (3 persons) of all beta users,
+including our own CEO / BE dev,
+despite my protest that it was a feature.
+
+![](https://res.cloudinary.com/dltbv060k/image/upload/v1743866892/2_lsmbay.png)
+
+The ~problem~ feature root ~cause~ reason _was_ that,
+as shown in the Layers panel above,
+there are not 1, nor 2,
+but 3 layers to achieve the smooth animation!
+In short, the Actual Chat does not know the layout of the Animating Chat,
+thus the Actual Chat plays it safe and use a narrow,
+fixed width instead of a fluid one.
+
+![](https://res.cloudinary.com/dltbv060k/image/upload/v1743866883/1_drpqw5.png)
+
+That, my friends, is what I'll (hope to) fix today 🤞
+</ReleaseBuild>
