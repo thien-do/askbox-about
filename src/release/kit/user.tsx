@@ -3,6 +3,10 @@ import { ReactElement } from "react"
 const URLS = {
   chinh: "https://www.linkedin.com/in/chinhnq",
   hai: "https://github.com/ng-hai",
+  nhi: "https://github.com/NgocNhi123",
+  huy: "https://github.com/huyng12",
+  khoa: "https://github.com/ldakhoa",
+  minh: "https://github.com/monodyle"
 }
 
 export function ReleaseUser(props: {
