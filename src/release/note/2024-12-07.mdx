@@ -1,0 +1,23 @@
+import { ReleaseUser } from '@/release/kit/user'
+import { ReleaseBuild } from '../kit/build'
+
+![](https://res.cloudinary.com/dltbv060k/image/upload/v1742050480/07-02_lkegud.png)
+
+![](https://res.cloudinary.com/dltbv060k/image/upload/v1742050481/07-01_pfpopm.png)
+
+**Chat is now available _immediately_ right after load 🐰**
+Ask Box always take less than 1 second to load,
+but previously there was a 2-second warming up right after,
+where typing might be laggy.
+With multi-threading magic, we moved the warm-up to other place,
+so now the app is fully interactive as soon as you see it!
+
+This does not only improve the initial experience but also the smoothness of every question!
+Now all heavy processing is done behind the scene,
+leaving the main thread fully for maximum animation frames 💨
+
+Thanks <ReleaseUser name="huy"/> for reporting the issue and taking part in the build discussion 🙇
+
+<ReleaseBuild>
+![](https://res.cloudinary.com/dltbv060k/image/upload/v1742050479/07-03_wov1o8.png)
+</ReleaseBuild>
