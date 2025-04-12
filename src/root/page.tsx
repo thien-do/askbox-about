@@ -1,4 +1,4 @@
-import Page from "@/root/page.mdx"
+import Content from "@/root/content.mdx"
 import { ReactNode } from "react"
 
 export function RootPage(): ReactNode {
@@ -13,7 +13,7 @@ export function RootPage(): ReactNode {
   return (
     <>
       {nav}
-      <Page />
+      <Content />
     </>
   )
 }
