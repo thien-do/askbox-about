@@ -33,5 +33,7 @@ export function generateStaticParams(): Params[] {
     { year: "2024", month: "11" },
     { year: "2024", month: "12" },
     { year: "2025", month: "01" },
+    { year: "2025", month: "02" },
+    { year: "2025", month: "03" },
   ]
 }
