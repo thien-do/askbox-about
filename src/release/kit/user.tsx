@@ -11,6 +11,7 @@ const URLS = {
   nhi: "https://github.com/NgocNhi123",
   quang: "https://github.com/iamquang95",
   tran: "#",
+  an: "https://github.com/ducan-ne",
 }
 
 export function ReleaseUser(props: {
