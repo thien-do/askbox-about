@@ -1,8 +1,8 @@
 import { Fragment, ReactElement } from "react"
 import nodeFile from "fs/promises"
 import nodePath from "path"
-import { ReleaseUser as ReleaseUserLink } from "../kit/user"
-import { ReleaseUser as ReleaseUserName } from "./map"
+import { RELEASE_USER_MAP, ReleaseUser as ReleaseUserName } from "./map"
+import Link from "next/link"
 
 type MdxComponent = (props: unknown) => ReactElement
 
@@ -78,17 +78,25 @@ export async function ReleaseUserPage(props: Props): Promise<ReactElement> {
 
   const notePlural = notePluralRules.select(dates.length) !== "one"
 
+  const url = RELEASE_USER_MAP[name]
+  const host = new URL(url).host.replace("www.", "").replace(".com", "")
+  const link = (
+    <Link target="_blank" href={url}>
+      {host}
+    </Link>
+  )
+
   return (
     <>
       <h1>
-        Built with <ReleaseUserLink name={name} />
+        Built with @{name}
       </h1>
       <p>
-        <ReleaseUserLink name={name} />{' '}
-        has been helping us shape AskBox with their feedback.{' '}
-        {`Here ${notePlural ? "are" : "is"} the `}
+        <strong>@{name} ({link})</strong>
+        {' '}has been helping us shape AskBox with their feedback.
+        {` Here ${notePlural ? "are" : "is"} the `}
         {`${dates.length} ${notePlural ? "releases" : "release"}`}
-        {' '}we have made together.
+        {' '}we have launched thanks to them.
       </p>
       {dates}
     </>
