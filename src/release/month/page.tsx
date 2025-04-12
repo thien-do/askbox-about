@@ -53,7 +53,7 @@ const dayHeading = new Intl.DateTimeFormat("en-US", {
   month: "long",
 })
 
-export async function ReleasePageMonth(props: Props): Promise<ReactElement> {
+export async function ReleaseMonthPage(props: Props): Promise<ReactElement> {
   const { year, month } = props
 
   const monthDate = new Date(year, month - 1, 1)
