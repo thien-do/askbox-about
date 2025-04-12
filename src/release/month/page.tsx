@@ -60,12 +60,13 @@ export async function ReleaseMonthPage(props: Props): Promise<ReactElement> {
 
   const days = await getNotes({ year, month })
 
-  const dayNodes = days.map(({ day, Note }, i) => {
+  const dayNodes = days.map((note, index) => {
+    const { day, Note } = note
     const dayDate = new Date(year, month - 1, day)
     const dayId = day.toString().padStart(2, "0")
 
     return (
-      <Fragment key={i}>
+      <Fragment key={index}>
         <h2 id={dayId}>
           <a href={`#${dayId}`}>#</a>
           {' '}
