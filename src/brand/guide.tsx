@@ -6,7 +6,7 @@ export function BrandGuide(): ReactNode {
   const [isLoading, setIsLoading] = useState(true);
 
   return (
-    <div className="relative w-[80vw] h-[80vh]">
+    <div className="relative h-96">
       {isLoading && <div>Loading</div>}
       <iframe
         className="absolute inset-0 w-full h-full"
